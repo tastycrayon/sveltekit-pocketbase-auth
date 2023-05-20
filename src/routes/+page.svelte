@@ -1,6 +1,10 @@
 <script lang="ts">
+	import { pb } from '$lib/pocketbase';
 	import type { PageData } from './$types';
 	export let data: PageData; // received todo from +page.ts
+	async function clientSide() {
+		console.log(await pb.collection('todos').getList());
+	}
 </script>
 
 {#if data.user}
@@ -21,5 +25,6 @@
 				</li>
 			{/each}
 		</ul>
+		<button class="btn variant-filled my-5" on:click={clientSide}>test</button>
 	</nav>
 {/if}

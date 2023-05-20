@@ -6,10 +6,6 @@
 	import GoogleBtn from './buttons/google.svelte';
 	import FacebookBtn from './buttons/facebook.svelte';
 	import Separator from './separator.svelte';
-	async function t() {
-		console.log(await pb.collection('users').listAuthMethods());
-	}
-	t();
 </script>
 
 <div
