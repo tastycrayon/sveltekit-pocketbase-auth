@@ -22,9 +22,10 @@ Update `.env` if you are not using the default pocketbase url. `PUBLIC_POCKETBAS
 ## Pocketbase Installation & Setup
 
 ```bash
-npm install
-npm run dev
+./pocketbase serve
 ```
+
+# Google OAuth setup
 
 Get `client id` and `client secret` from [Google console](https://console.cloud.google.com/apis/credentials). Create a OAuth project.
 
@@ -85,6 +86,8 @@ export const load = (async ({ locals }) => {
 ## How it works
 
 `src/hooks.server.ts` sits bewteen clients and Sveltekit server. It takes cookie from user, and creates an `pb` instance in Sveltekit.
+
+`src/hooks.client.ts` does the same and allows usage on client-side/browser.
 
 ```ts
 const pb = new PocketBase(); // new instance
