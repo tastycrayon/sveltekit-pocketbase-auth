@@ -1,6 +1,6 @@
 # Sveltekit Pocketbase authentication
 
-This project implements authentication with [Sveltekit](https://kit.svelte.dev) and [Pocketbase](https://pocketbase.io) with email and Google OAuth.
+Implementation of with [Sveltekit](https://kit.svelte.dev) and [Pocketbase](https://pocketbase.io) authentication with email and Google OAuth.
 
 ![2023-05-20_20-03](https://github.com/tastycrayon/sveltekit-pocketbase-auth/assets/37541747/6bbd58b8-4961-4d7f-a7de-ea9488a3f38e)
 
