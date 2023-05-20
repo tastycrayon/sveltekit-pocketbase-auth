@@ -26,19 +26,25 @@ npm install
 npm run dev
 ```
 
-Get `client id` and `client secret` from [Google console](https://console.cloud.google.com/apis/credentials). Create a OAuth project. Set uri and Redirect uri.
+Get `client id` and `client secret` from [Google console](https://console.cloud.google.com/apis/credentials). Create a OAuth project.
+
+**Set uri and Redirect uri.**
 
 ```
 http://localhost:5173
 http://127.0.0.1:8090/api/oauth2-redirect
 ```
 
+**Copy client id and secret.**
+
 ![2023-05-20_21-16](https://github.com/tastycrayon/sveltekit-pocketbase-auth/assets/37541747/39ff8b35-3c2c-4861-b5c6-e17f2e9d09d0)
 
 **_Copy Client ID and Client Secret._**
+
 ![2023-05-20_22-11](https://github.com/tastycrayon/sveltekit-pocketbase-auth/assets/37541747/4c4ff923-55d4-4353-873a-ecbef0a35076)
 
 **_Set the providers in pocketbase._**
+
 ![2023-05-20_22-20](https://github.com/tastycrayon/sveltekit-pocketbase-auth/assets/37541747/8c619d5c-4dcd-4ae1-9286-bb382e953738)
 
 ## Usage
