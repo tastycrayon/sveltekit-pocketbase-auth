@@ -84,7 +84,7 @@ export const load = (async ({ locals }) => {
 
 ## How it works
 
-`src/hooks.server.ts` and `src/hooks.client.ts` sits bewteen clients and Sveltekit server. It takes cookie from user, and creates an `pb` instance in Sveltekit.
+`src/hooks.server.ts` sits bewteen clients and Sveltekit server. It takes cookie from user, and creates an `pb` instance in Sveltekit.
 
 ```ts
 const pb = new PocketBase(); // new instance
