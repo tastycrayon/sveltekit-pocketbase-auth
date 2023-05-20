@@ -29,14 +29,12 @@ Update `.env` if you are not using the default pocketbase url. `PUBLIC_POCKETBAS
 
 Get `client id` and `client secret` from [Google console](https://console.cloud.google.com/apis/credentials). Create a OAuth project.
 
-**Set uri and Redirect uri.**
+**_Set uri and Redirect uri._**
 
 ```
 http://localhost:5173
 http://127.0.0.1:8090/api/oauth2-redirect
 ```
-
-**Copy client id and secret.**
 
 ![2023-05-20_21-16](https://github.com/tastycrayon/sveltekit-pocketbase-auth/assets/37541747/39ff8b35-3c2c-4861-b5c6-e17f2e9d09d0)
 
