@@ -25,7 +25,7 @@ Update `.env` if you are not using the default pocketbase url. `PUBLIC_POCKETBAS
 ./pocketbase serve
 ```
 
-# Google OAuth setup
+### Google OAuth setup
 
 Get `client id` and `client secret` from [Google console](https://console.cloud.google.com/apis/credentials). Create a OAuth project.
 
