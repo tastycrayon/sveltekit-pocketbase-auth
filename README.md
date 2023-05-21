@@ -27,7 +27,7 @@ Update `.env` if you are not using the default pocketbase url. `PUBLIC_POCKETBAS
 
 ### Google OAuth setup
 
-Get `client id` and `client secret` from [Google console](https://console.cloud.google.com/apis/credentials). Create a OAuth project.
+Get `client id` and `client secret` from [Google console](https://console.cloud.google.com/apis/credentials). Create an OAuth project.
 
 **_Set uri and Redirect uri._**
 
@@ -72,7 +72,7 @@ export const load = (async ({ locals }) => {
 
 <script lang="ts">
 	import { pb } from '$lib/pocketbase';
-    import type { ITodo } from '$lib/types';
+	import type { ITodo } from '$lib/types';
 	async function clientSideFn() {
 		console.log(await pb.collection('todos').getList<ITodo>());
 	}
