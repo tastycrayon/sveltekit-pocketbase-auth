@@ -43,7 +43,6 @@ export const actions = {
 				.collection('users')
 				.authWithPassword(emailOrUsername.toLowerCase(), password);
 			// return { success: true };
-			throw redirect(HttpStatusCode.SEE_OTHER, '/');
 		} catch (err) {
 			console.log('Error: ', err);
 			// in case of user, avoid showing actual error to prevent fishing of information
@@ -52,5 +51,6 @@ export const actions = {
 				error: makeErrObj('Incorrect credentials!', 'unknown')
 			});
 		}
+		throw redirect(HttpStatusCode.SEE_OTHER, '/');
 	}
 } satisfies Actions;
